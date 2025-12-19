@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEKU HOT Club | Exclusive Adult Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #1a0000, #000000);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #ff0000;
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ff0000;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+            letter-spacing: 2px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #111111;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-size: 1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            color: #ff0000;
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+        
+        /* Banner Section */
+        .banner {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .banner-content {
+            max-width: 800px;
+        }
+        
+        .banner h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #ff0000;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        
+        .banner p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+            background-color: #cc0000;
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #ff0000;
+            font-weight: 700;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #ff0000;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: #111111;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            border: 1px solid #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
+            border-color: #ff0000;
+        }
+        
+        .product-media {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.5s;
+        }
+        
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+        
+        .view-count {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(0,0,0,0.7);
+            color: #ffffff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #ff0000;
+            font-weight: 600;
+        }
+        
+        .product-info p {
+            margin-bottom: 15px;
+            color: #cccccc;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .timer {
+            background-color: #1a0000;
+            color: #ff0000;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        
+        /* Floating Button */
+        .btn-floating {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.6);
+            background-color: #ff0000;
+            color: #ffffff;
+            transition: all 0.3s;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .btn-floating:hover {
+            transform: scale(1.1);
+            box-shadow: 0 7px 25px rgba(255, 0, 0, 0.8);
+        }
+        
+        /* Online Counter */
+        .online-count {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background-color: #1a0000;
+            color: #ff0000;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            z-index: 100;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        
+        .online-count i {
+            margin-right: 8px;
+        }
+        
+        /* Payment Section */
+        .payment-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #111111;
+            border-radius: 10px;
+            border: 2px solid #ff0000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+        
+        .checkout-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .checkout-header h1 {
+            font-size: 2.2rem;
+            color: #ff0000;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .checkout-header p {
+            font-size: 1.1rem;
+            color: #cccccc;
+        }
+        
+        .product-summary {
+            display: flex;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #1a0000;
+            border-radius: 10px;
+            gap: 25px;
+        }
+        
+        .product-summary .product-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        
+        .product-summary .product-details {
+            flex: 1;
+        }
+        
+        .product-summary h3 {
+            font-size: 1.6rem;
+            color: #ff0000;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .product-summary p {
+            color: #cccccc;
+            margin-bottom: 15px;
+        }
+        
+        .video-preview {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .video-preview h4 {
+            color: #ff0000;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .preview-video {
+            width: 100%;
+            max-width: 500px;
+            height: 280px;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .preview-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: linear-gradient(45deg, #1a0000, #330000);
+            color: #ff6666;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .video-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .payment-options {
+            margin-bottom: 30px;
+        }
+        
+        .payment-options h2 {
+            font-size: 1.5rem;
+            color: #ff0000;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            min-width: 120px;
+            border: 2px solid transparent;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .payment-method.active {
+            background-color: #1a0000;
+            border: 2px solid #ff0000;
+        }
+        
+        .payment-method:hover {
+            background-color: #1a0000;
+        }
+        
+        .payment-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .paypal-icon {
+            color: #0070ba;
+        }
+        
+        .stripe-icon {
+            color: #635bff;
+        }
+        
+        .payment-method span {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .payment-form {
+            background-color: #1a0000;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .payment-form p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #cccccc;
+        }
+        
+        .paypal-button-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .paypal-button-enhanced {
+            display: inline-block;
+            background: linear-gradient(135deg, #0070ba, #009cde);
+            color: white;
+            padding: 20px 50px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.3rem;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 112, 186, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-width: 300px;
+            border: 2px solid #ffc439;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .paypal-button-enhanced:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 112, 186, 0.5);
+            background: linear-gradient(135deg, #009cde, #0070ba);
+        }
+        
+        .paypal-button-enhanced i {
+            margin-right: 12px;
+            font-size: 1.4em;
+        }
+        
+        .paypal-button-enhanced .price-tag {
+            background: #ffc439;
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-left: 10px;
+            border: 1px solid #fff;
+        }
+        
+        .stripe-button-enhanced {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: white;
+            padding: 20px 50px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.3rem;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-width: 300px;
+            border: 2px solid #fff;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .stripe-button-enhanced:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(255, 0, 0, 0.5);
+            background: linear-gradient(135deg, #cc0000, #ff0000);
+        }
+        
+        .stripe-button-enhanced i {
+            margin-right: 12px;
+            font-size: 1.4em;
+        }
+        
+        .stripe-button-enhanced .price-tag {
+            background: #fff;
+            color: #ff0000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-left: 10px;
+            border: 1px solid #ff0000;
+        }
+        
+        .payment-instructions {
+            background-color: #1a0000;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            font-size: 0.95rem;
+        }
+        
+        .payment-instructions h3 {
+            color: #ff0000;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .payment-instructions p {
+            margin-bottom: 10px;
+        }
+        
+        .btn-telegram {
+            background-color: #ff0000;
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .btn-telegram i {
+            margin-right: 10px;
+        }
+        
+        footer {
+            background-color: #111111;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            margin: 10px 0;
+            color: #999;
+        }
+        
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Safari-specific fixes */
+        @media not all and (min-resolution:.001dpcm) { 
+            @supports (-webkit-appearance:none) {
+                .btn, .paypal-button-enhanced, .stripe-button-enhanced, .btn-telegram {
+                    -webkit-appearance: none;
+                    border-radius: 30px;
+                }
+                
+                .payment-method {
+                    cursor: default;
+                }
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+            
+            .banner p {
+                font-size: 1.1rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-summary {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .product-summary .product-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .payment-methods {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .paypal-button-enhanced, .stripe-button-enhanced {
+                min-width: 250px;
+                padding: 18px 30px;
+                font-size: 1.2rem;
+            }
+            
+            .btn-floating {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .online-count {
+                bottom: 20px;
+                left: 20px;
+                font-size: 0.8rem;
+            }
+            
+            .preview-video {
+                height: 200px;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">DEKU HOT CLUB</div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#vip">VIP</a>
+        <a href="https://t.me/teen_sellwr" target="_blank" id="supportLink">Support</a>
+    </nav>
+    
+    <!-- Main Banner -->
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <h1>EXCLUSIVE ADULT CONTENT</h1>
+            <p>Discover unique and personalized experiences made just for you</p>
+            <a href="#products" class="btn">VIEW PRODUCTS</a>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title">OUR PRODUCTS</h2>
+        <div class="product-grid" id="productsContainer">
+            <!-- Products will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Floating Buy Now Button -->
+    <a href="#products" class="btn btn-floating" id="floatingBuyBtn">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+    
+    <!-- Online Users Counter -->
+    <div class="online-count" id="onlineCount">
+        <i class="fas fa-users"></i> <span id="onlineUsers">0</span> people online
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 DEKU HOT CLUB. All rights reserved.</p>
+        <p>For adults only. All models are 18+ years old.</p>
+        <p class="disclaimer">This content is protected by copyright laws. Unauthorized distribution is prohibited.</p>
+    </footer>
+
+    <script>
+        // Product Data - ALL 23 ORIGINAL PRODUCTS WITH VIDEO PREVIEWS
+        let products = [
+            {
+                id: 1,
+                name: "MOM AND SON",
+                description: "MOM AND SON CP - Exclusive content collection with high quality videos and images",
+                price: 35.00,
+                image: "https://i.postimg.cc/d10qQdn1/20250515-150409.jpg",
+                video: "https://drive.google.com/file/d/1_r0zro_xWF4GI0CcLZJXQg9uwvd5SUZY/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=MOM+AND+SON&amount=35.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 2,
+                name: "BRAZZERS",
+                description: "30 media files + themed HD videos - Premium quality content",
+                price: 30.00,
+                image: "https://i.postimg.cc/qqh4yTPH/20250515-150356.jpg",
+                video: "https://drive.google.com/file/d/1iPrSXojZWfZ7O5jd2Z0qB1GfB5DVadU3/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=BRAZZERS&amount=30.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 3,
+                name: "IZZY FOLDER",
+                description: "+ 20 FOLDER INCEST 110 VIDEOS AND DOG - Extensive collection",
+                price: 25.00,
+                image: "https://i.postimg.cc/J0fmQF8D/20250531-220548.jpg",
+                video: "https://drive.google.com/file/d/1gv1Js2MpOBPeYanLioCY8B8VR5BFT7EQ/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=IZZY+FOLDER&amount=25.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 4,
+                name: "VIP Annual Membership",
+                description: "20+ new packs every week, exclusive content, priority access",
+                price: 250.00,
+                image: "https://i.postimg.cc/Fzdr0bPf/IMG-20250518-152754-287.jpg",
+                video: "https://drive.google.com/file/d/1fnGOaxDGUifbpPZE0Z90W9iU03GV-06D/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=VIP+Annual+Membership&amount=250.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 5,
+                name: "OMEGLE",
+                description: "NEW FOLDER DONT WAST THIS package - Fresh content",
+                price: 45.00,
+                image: "https://i.postimg.cc/Y9ytv9yx/20250515-150359.jpg",
+                video: "https://drive.google.com/file/d/1cwLcUpS4p0OBjn0yF1wA2ha414O58rOQ/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=OMEGLE&amount=45.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 6,
+                name: "BLACKMAIL",
+                description: "full media folder and 550GB videos HD - Massive collection",
+                price: 50.00,
+                image: "https://i.postimg.cc/QxKdWQDK/20250521-195713.jpg",
+                video: "https://drive.google.com/file/d/19O5JVw2w-ic039kYr8IRO4IfzN1zJCqF/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=BLACKMAIL&amount=50.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 7,
+                name: "LIZZY AND HER BROTHER",
+                description: "LIZZY AND HER BROTHER INCEST FOLDER - Exclusive content",
+                price: 25.00,
+                image: "https://i.postimg.cc/PqTXc0w1/20250515-150418.jpg",
+                video: "https://drive.google.com/file/d/1K8tv5vpQRR7tF0QqLY5OpFvNJeGWMTKe/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=LIZZY+AND+HER+BROTHER&amount=25.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {    
+                id: 8,
+                name: "TRINITY B",
+                description: "CONTENT OF TEENS - Curated collection",
+                price: 25.00,
+                image: "https://i.postimg.cc/5N77gJT5/20250608-152631.jpg",
+                video: "https://drive.google.com/file/d/1_r0zro_xWF4GI0CcLZJXQg9uwvd5SUZY/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=TRINITY+B&amount=25.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 9,
+                name: "BELLE DELPHINE",
+                description: "THE MOST POPULAR FOLDER ON TIK TOK - Viral content",
+                price: 20.00,
+                image: "https://i.postimg.cc/g24Z8c7d/20250608-154549.jpg",
+                video: "https://drive.google.com/file/d/1iPrSXojZWfZ7O5jd2Z0qB1GfB5DVadU3/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=BELLE+DELPHINE&amount=20.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 10,
+                name: "BILLIE EILISH",
+                description: "Exclusive content collection - Premium material",
+                price: 20.00,
+                image: "https://i.postimg.cc/xdt3f3Qv/20250608-154517.jpg",
+                video: "https://drive.google.com/file/d/1gv1Js2MpOBPeYanLioCY8B8VR5BFT7EQ/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=BILLIE+EILISH&amount=20.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 11,
+                name: "DARKZEID",
+                description: "Premium content package - Exclusive material",
+                price: 35.00,
+                image: "https://i.postimg.cc/br9V50y0/IMG-20250901-221625-560.jpg",
+                video: "https://drive.google.com/file/d/1fnGOaxDGUifbpPZE0Z90W9iU03GV-06D/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=DARKZEID&amount=35.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 12,
+                name: "INVAKA",
+                description: "Special collection - Unique content",
+                price: 40.00,
+                image: "https://i.postimg.cc/3RGS5qZs/IMG-20250902-170043-151.jpg",
+                video: "https://drive.google.com/file/d/1cwLcUpS4p0OBjn0yF1wA2ha414O58rOQ/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=INVAKA&amount=40.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 13,
+                name: "Desire Garcia",
+                description: "Exclusive content - Premium quality",
+                price: 25.00,
+                image: "https://i.postimg.cc/t4TvrVLP/IMG-20250902-170339-400.jpg",
+                video: "https://drive.google.com/file/d/19O5JVw2w-ic039kYr8IRO4IfzN1zJCqF/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=Desire+Garcia&amount=25.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 14,
+                name: "FATHER AND DAUGHTER",
+                description: "Special collection - Exclusive scenarios",
+                price: 35.00,
+                image: "https://i.postimg.cc/TwrtyjD8/IMG-20250827-094703-624.jpg",
+                video: "https://drive.google.com/file/d/1K8tv5vpQRR7tF0QqLY5OpFvNJeGWMTKe/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=FATHER+AND+DAUGHTER&amount=35.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 15,
+                name: "REAL INCEST",
+                description: "Rare content not available elsewhere - Exclusive",
+                price: 40.00,
+                image: "https://i.postimg.cc/XJM271Xc/IMG-20250828-170701-014.jpg",
+                video: "https://drive.google.com/file/d/1_r0zro_xWF4GI0CcLZJXQg9uwvd5SUZY/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=REAL+INCEST&amount=40.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 16,
+                name: "ALL CP",
+                description: "Ultimate premium content package - Complete collection",
+                price: 75.00,
+                image: "https://i.postimg.cc/Gp4NpsKr/IMG-20250901-221410-024.jpg",
+                video: "https://drive.google.com/file/d/1iPrSXojZWfZ7O5jd2Z0qB1GfB5DVadU3/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=ALL+CP&amount=75.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 17,
+                name: "CP 1",
+                description: "Limited time exclusive content - Special offer",
+                price: 25.00,
+                image: "https://i.postimg.cc/pT86fb36/IMG-20250901-221410-576.jpg",
+                video: "https://drive.google.com/file/d/1gv1Js2MpOBPeYanLioCY8B8VR5BFT7EQ/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=CP+1&amount=25.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 18,
+                name: "CP 2",
+                description: "Over 100 premium media files - Extensive package",
+                price: 35.00,
+                image: "https://i.postimg.cc/CxLXW2fR/IMG-20250901-221410-569.jpg",
+                video: "https://drive.google.com/file/d/1fnGOaxDGUifbpPZE0Z90W9iU03GV-06D/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=CP+2&amount=35.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 19,
+                name: "ALL CONTENT TEENS",
+                description: "High quality exclusive content - Teen collection",
+                price: 45.00,
+                image: "https://i.postimg.cc/VN0GwPsk/IMG-20250902-181310-488.jpg",
+                video: "https://drive.google.com/file/d/1cwLcUpS4p0OBjn0yF1wA2ha414O58rOQ/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=ALL+CONTENT+TEENS&amount=45.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 20,
+                name: "BABY ASHLEY",
+                description: "Premium content with bonus material - Exclusive",
+                price: 25.00,
+                image: "https://i.postimg.cc/m2T5Hnjm/IMG-20250901-221625-947.jpg",
+                video: "https://drive.google.com/file/d/19O5JVw2w-ic039kYr8IRO4IfzN1zJCqF/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=BABY+ASHLEY&amount=25.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 21,
+                name: "GAYS YOUNG VIP CP",
+                description: "All-access pass to exclusive content - VIP package",
+                price: 45.00,
+                image: "https://i.postimg.cc/2jsNp6XX/Screenshot-2025-09-28-20-16-48-480-app-nicegram.jpg",
+                video: "https://drive.google.com/file/d/1K8tv5vpQRR7tF0QqLY5OpFvNJeGWMTKe/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=GAYS+YOUNG+VIP+CP&amount=45.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10,
+            },
+            {
+                id: 22,
+                name: "Monkey APP",
+                description: "The most exclusive content available - Premium",
+                price: 20.00,
+                image: "https://i.postimg.cc/L5jfYRBG/IMG_20251119_105200_086.jpg",
+                video: "https://drive.google.com/file/d/1_r0zro_xWF4GI0CcLZJXQg9uwvd5SUZY/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=Monkey+APP&amount=20.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            },
+            {
+                id: 23,
+                name: "OMEGLE",
+                description: "Everything we have to offer - Complete package",
+                price: 20.00,
+                image: "https://i.postimg.cc/RFw3d8q6/IMG-20250921-130645-597.jpg",
+                video: "https://drive.google.com/file/d/1iPrSXojZWfZ7O5jd2Z0qB1GfB5DVadU3/preview",
+                stripeLink: "https://buy.stripe.com/test_00g3fR7nO3pC9Uw5kk",
+                paypalLink: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=chefasvo@gmail.com&lc=US&item_name=OMEGLE&amount=20.00&currency_code=USD&button_subtype=services&no_note=0&bn=PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest",
+                views: Math.floor(Math.random() * 50) + 10
+            }
+        ];
+
+        // Sistema de Usuários Online
+        let onlineUsers = Math.floor(Math.random() * 50) + 20;
+        
+        function updateOnlineUsers() {
+            // Simulate user count changes
+            const change = Math.floor(Math.random() * 5) - 2;
+            onlineUsers = Math.max(10, onlineUsers + change);
+            document.getElementById('onlineUsers').textContent = onlineUsers;
+            
+            setTimeout(updateOnlineUsers, 30000);
+        }
+
+        function loadProducts() {
+            const container = document.getElementById('productsContainer');
+            if (!container) {
+                console.error('Products container not found!');
+                return;
+            }
+            
+            container.innerHTML = '';
+            
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.dataset.id = product.id;
+                
+                const timerDisplay = document.createElement('div');
+                timerDisplay.className = 'timer';
+                timerDisplay.textContent = "20:00";
+                
+                const viewCount = document.createElement('div');
+                viewCount.className = 'view-count';
+                viewCount.innerHTML = `<i class="fas fa-eye"></i> ${product.views}`;
+                
+                productCard.innerHTML = `
+                    <div class="product-media">
+                        <div class="product-image" style="background-image: url('${product.image}')"></div>
+                        ${viewCount.outerHTML}
+                    </div>
+                    <div class="product-info">
+                        ${timerDisplay.outerHTML}
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <div class="price">$${product.price.toFixed(2)}</div>
+                        <button class="btn" onclick="showPayment(${product.id})">BUY NOW</button>
+                    </div>
+                `;
+                
+                container.appendChild(productCard);
+                
+                // Start timer for this product
+                const display = productCard.querySelector('.timer');
+                startTimer(1200, display);
+            });
+        }
+
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.textContent = "OFFER EXPIRED";
+                    display.style.color = "#ff4444";
+                }
+            }, 1000);
+        }
+
+        // Show Payment Page with Video Preview
+        function showPayment(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            // Remove any existing payment container
+            const existingPayment = document.querySelector('.payment-container');
+            if (existingPayment) {
+                existingPayment.remove();
+            }
+            
+            // Create video preview element
+            let videoPreview = '';
+            if (product.video) {
+                videoPreview = `
+                    <div class="video-preview">
+                        <h4>Product Preview</h4>
+                        <div class="preview-video">
+                            <iframe src="${product.video}" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                `;
+            } else {
+                videoPreview = `
+                    <div class="video-preview">
+                        <h4>Product Preview</h4>
+                        <div class="preview-video">
+                            <div class="video-placeholder">
+                                <i class="fas fa-video"></i>
+                                <span>Video preview not available</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Create payment section
+            const paymentContainer = document.createElement('div');
+            paymentContainer.className = 'payment-container';
+            paymentContainer.id = `payment-${product.id}`;
+            paymentContainer.innerHTML = `
+                <div class="checkout-header">
+                    <h1>Complete Your Purchase</h1>
+                    <p>Secure payment • Instant access</p>
+                </div>
+                
+                <div class="product-summary">
+                    <div class="product-image" style="background-image: url('${product.image}')"></div>
+                    <div class="product-details">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <div class="price">$${product.price.toFixed(2)}</div>
+                        ${videoPreview}
+                    </div>
+                </div>
+                
+                <div class="payment-options">
+                    <h2>Select Payment Method</h2>
+                    <div class="payment-methods">
+                        <div class="payment-method active" data-method="paypal">
+                            <i class="fab fa-cc-paypal payment-icon paypal-icon"></i>
+                            <span>PayPal</span>
+                        </div>
+                        <div class="payment-method" data-method="stripe">
+                            <i class="fab fa-cc-stripe payment-icon stripe-icon"></i>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form" id="paypal-form">
+                        <p>Click the PayPal button below to complete your payment securely</p>
+                        
+                        <div class="paypal-button-container">
+                            <a href="${product.paypalLink}" target="_blank" class="paypal-button-enhanced">
+                                <i class="fab fa-paypal"></i> 
+                                PAY WITH PAYPAL
+                                <span class="price-tag">$${product.price.toFixed(2)}</span>
+                            </a>
+                        </div>
+                        
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #ccc;">
+                            <i class="fas fa-shield-alt"></i> Secure SSL Encryption • Instant Delivery
+                        </p>
+                    </div>
+                    
+                    <div class="payment-form" id="stripe-form" style="display: none;">
+                        <p>Click the Stripe button below to complete your payment with credit card</p>
+                        
+                        <div class="paypal-button-container">
+                            <a href="${product.stripeLink}" target="_blank" class="stripe-button-enhanced">
+                                <i class="fab fa-cc-stripe"></i> 
+                                PAY WITH STRIPE
+                                <span class="price-tag">$${product.price.toFixed(2)}</span>
+                            </a>
+                        </div>
+                        
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #ccc;">
+                            <i class="fas fa-shield-alt"></i> Secure Payment • Visa/Mastercard Accepted
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="payment-instructions">
+                    <h3>Payment Instructions:</h3>
+                    <p>1. Select your preferred payment method above</p>
+                    <p>2. Click the payment button to complete your transaction</p>
+                    <p>3. Send payment proof on Telegram to receive your content</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="https://t.me/teen_sellwr" class="btn btn-telegram" target="_blank">
+                        <i class="fab fa-telegram"></i> Contact on Telegram for Support
+                    </a>
+                </div>
+                
+                <button class="btn" style="margin-top: 20px; width: 100%;" onclick="closePayment(${product.id})">Back to Products</button>
+            `;
+            
+            document.body.appendChild(paymentContainer);
+            window.location.href = `#payment-${product.id}`;
+            
+            // Add payment method switching
+            setupPaymentMethods();
+        }
+
+        function setupPaymentMethods() {
+            document.querySelectorAll('.payment-method').forEach(method => {
+                method.addEventListener('click', function() {
+                    // Remove active class from all methods
+                    document.querySelectorAll('.payment-method').forEach(m => {
+                        m.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked method
+                    this.classList.add('active');
+                    
+                    // Show corresponding payment form
+                    const methodType = this.getAttribute('data-method');
+                    document.querySelectorAll('.payment-form').forEach(form => {
+                        form.style.display = 'none';
+                    });
+                    
+                    document.getElementById(`${methodType}-form`).style.display = 'block';
+                });
+            });
+        }
+
+        function closePayment(productId) {
+            const payment = document.getElementById(`payment-${productId}`);
+            if (payment) payment.remove();
+            window.location.href = '#products';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProducts();
+            updateOnlineUsers();
+            
+            // Fix for Safari support link
+            document.getElementById('supportLink').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open('https://t.me/teen_sellwr', '_blank');
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
